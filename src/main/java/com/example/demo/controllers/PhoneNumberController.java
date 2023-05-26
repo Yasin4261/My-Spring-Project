@@ -19,9 +19,9 @@ public class PhoneNumberController {
     }
 
     @PostMapping
-    public PhoneNumber save(@RequestBody PhoneNumber phoneNumber) {
+    public Map save(@RequestBody PhoneNumber phoneNumber) {
 
-        return phoneNumber;
+        return phoneNumberService.save(phoneNumber);
 
     }
 
